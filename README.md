@@ -13,7 +13,7 @@ The server is simply an echo server. It accepts all connections on `ws://localho
 There is an abstract client that can be overwritten with advanced behavior. I provide a simple implementation that just prints all messages it receives from the socket to the console.
 
 ## Running
-* Make sure the requirements are installed
+* Make sure the requirements are installed (**Requires Python 3.7+**)
 ```
 pip install -r requirements.txt
 ```
