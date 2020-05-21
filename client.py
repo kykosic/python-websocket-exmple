@@ -51,7 +51,7 @@ class WebsocketThread(ABC, threading.Thread):
             while not thread.received_message:
                 if time.time() - tick > TIMEOUT:
                     raise TimeoutError('Timed out waiting for message')
-                    time.sleep(0.5)
+                time.sleep(0.5)
 
             print("Done, killing the thread")
             thread.kill()
